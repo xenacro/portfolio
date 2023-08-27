@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/style.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/loader.css"
+      media="screen"
+    />
+    <link rel="stylesheet" type="text/css" href="./app.css" media="screen" />
+    <title>XeNaCrO - Portfolio</title>
+    <script>
+      function loadBundle() {
+        let injectBundle = () => {
+          document.querySelector("#root").style.display = "block";
+          let bundle = document.createElement("script");
+          bundle.setAttribute("src", "./app.bundle.js");
+          document.body.appendChild(bundle);
+        };
+          shimmer = `<div class="shimmer-loader header_shimmer"></div>
+      <div class="shimmer-loader desc_shimmer"></div>
+      <div class="shimmer-loader flow_shimmer"></div>`;
+        injectBundle();
+      }
+    </script>
+  </head>
+  <body onload="loadBundle()">
+    <div id="loader"></div>
+    <div id="root"></div>
+  </body>
+</html>
