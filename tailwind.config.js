@@ -16,6 +16,9 @@ module.exports = {
         "20%,85%": { transform: "translateX(-40%)", opacity: "1" },
         "85%,100%": { transform: "translateX(0)" }
       }
+    },
+    listStyleType: {
+      square: 'square bg-[red]'
     }
   },
   plugins: [],
