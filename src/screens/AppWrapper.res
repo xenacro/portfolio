@@ -5,4 +5,5 @@ let make = () =>
     <AbsoluteShapes />
     <Banner/>
     <Quote />
+    <Projects />
   </div>
