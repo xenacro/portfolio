@@ -8,4 +8,5 @@ let make = () =>
     <Quote />
     <Projects />
     <Skills />
+    <About />
   </div>

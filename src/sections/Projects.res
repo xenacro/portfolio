@@ -4,7 +4,7 @@ let make = () =>
     <SectionHeader title="projects" lineWidth="32rem" expandPath=Some("/works") />
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
       <ProjectTile
-        className="flex flex-col border border-solid border-[#ABB2BF]"
+        className="flex flex-col border border-solid border-secondary"
         thumbnail="/assets/icons/banner-img.png"
         tags="HTML CSS Python Flask"
         title="SomeName"
@@ -12,7 +12,7 @@ let make = () =>
         link="/someURL"
       />
       <ProjectTile
-        className="hidden lg:flex flex-col border border-solid border-[#ABB2BF]"
+        className="hidden lg:flex flex-col border border-solid border-secondary"
         thumbnail="/assets/icons/banner-img.png"
         tags="HTML CSS Python Flask"
         title="SomeName"
@@ -20,7 +20,7 @@ let make = () =>
         link="/someURL"
       />
       <ProjectTile
-        className="hidden lg:flex flex-col border border-solid border-[#ABB2BF]"
+        className="hidden lg:flex flex-col border border-solid border-secondary"
         thumbnail="/assets/icons/banner-img.png"
         tags="HTML CSS Python Flask"
         title="SomeName"
