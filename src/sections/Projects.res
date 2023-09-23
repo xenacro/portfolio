@@ -5,7 +5,7 @@ let make = () =>
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
       <ProjectTile
         className="flex flex-col border border-solid border-secondary"
-        thumbnail="/assets/icons/banner-img.png"
+        thumbnail=Some("/assets/icons/banner-img.png")
         tags="HTML CSS Python Flask"
         title="SomeName"
         description="Small Description"
@@ -13,7 +13,7 @@ let make = () =>
       />
       <ProjectTile
         className="hidden lg:flex flex-col border border-solid border-secondary"
-        thumbnail="/assets/icons/banner-img.png"
+        thumbnail=Some("/assets/icons/banner-img.png")
         tags="HTML CSS Python Flask"
         title="SomeName"
         description="Small Description"
@@ -21,7 +21,7 @@ let make = () =>
       />
       <ProjectTile
         className="hidden lg:flex flex-col border border-solid border-secondary"
-        thumbnail="/assets/icons/banner-img.png"
+        thumbnail=Some("/assets/icons/banner-img.png")
         tags="HTML CSS Python Flask"
         title="SomeName"
         description="Small Description"
