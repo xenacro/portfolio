@@ -10,12 +10,21 @@ module.exports = {
     },
     animation: {
       "slide-in-left": "slideInLeft 0.5s ease-out",
+      simmer: "simmer 5s cubic-bezier(0.4, 0, 0.6, 1) infinite",
     },
     keyframes: {
       slideInLeft: {
         "0%,20%": { transform: "translateX(-90%)", opacity: "0" },
         "20%,85%": { transform: "translateX(-40%)", opacity: "1" },
         "85%,100%": { transform: "translateX(0)" },
+      },
+      simmer: {
+        "0%,100%": {
+          opacity: 1,
+        },
+        "50%": {
+          opacity: 0.8,
+        },
       },
     },
     listStyleType: {
