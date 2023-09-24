@@ -1,6 +1,6 @@
 @react.component
 let make = () =>
-  <div className="flex flex-col gap-8 lg:gap-12">
+  <div className="flex flex-col gap-8 lg:gap-12 animate-show-up">
     <ScreenHeader title="projects" subTitle="List of my projects" />
     <SectionHeader title="complete-apps" lineWidth="0" />
     <div className="grid grid-cols-3 gap-4">

@@ -3,7 +3,8 @@ let make = () => {
   let (isNavOpen, setIsNavOpen) = React.useState(_ => false)
   <>
     <div className="flex justify-between h-6">
-      <a href="/" className="text-3xl"> {React.string("XeNaCrO")} </a>
+      //   <a href="/" className="text-3xl"> {React.string("XeNaCrO")} </a>
+      <Link to="/" className="text-3xl"> {React.string("XeNaCrO")} </Link>
       <div className="flex-grow flex justify-end lg:hidden">
         <div className="relative w-6 h-6" onClick={_ => setIsNavOpen(val => !val)}>
           <div

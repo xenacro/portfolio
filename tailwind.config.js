@@ -11,6 +11,7 @@ module.exports = {
     animation: {
       "slide-in-left": "slideInLeft 0.5s ease-out",
       simmer: "simmer 5s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      "show-up": "showUp 0.5s ease-out",
     },
     keyframes: {
       slideInLeft: {
@@ -24,6 +25,14 @@ module.exports = {
         },
         "50%": {
           opacity: 0.8,
+        },
+      },
+      showUp: {
+        "0%,20%": {
+          opacity: 0.5,
+        },
+        "20%,100%": {
+          opacity: 1,
         },
       },
     },

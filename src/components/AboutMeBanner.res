@@ -14,9 +14,12 @@ let make = (~completeLink=None) =>
         )}
       </p>
       {completeLink->Belt.Option.mapWithDefault(React.null, href =>
-        <a href className="border border-solid border-primary px-4 py-2 w-fit">
+        // <a href className="border border-solid border-primary px-4 py-2 w-fit">
+        //   {React.string("Read more \u21DD")}
+        // </a>
+        <Link to=href className="border border-solid border-primary px-4 py-2 w-fit">
           {React.string("Read more \u21DD")}
-        </a>
+        </Link>
       )}
     </div>
     <img className="hidden lg:block" src="/assets/icons/banner-img.png" />

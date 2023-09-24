@@ -1,6 +1,8 @@
 {
   "name": "portfolio",
-  "reason": { "react-jsx": 3 },
+  "reason": {
+    "react-jsx": 3
+  },
   "sources": {
     "dir": "src",
     "subdirs": true
@@ -13,6 +15,7 @@
     "in-source": true
   },
   "bs-dependencies": [
-    "@rescript/react"
+    "@rescript/react",
+    "rescript-webapi"
   ]
 }

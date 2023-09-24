@@ -12,6 +12,7 @@ let make = (~title, ~lineWidth, ~expandPath=None) =>
       />
     </div>
     {expandPath->Belt.Option.mapWithDefault(React.null, path =>
-      <a href=path className="text-base"> {React.string("View all \u21DD")} </a>
+      // <a href=path className="text-base"> {React.string("View all \u21DD")} </a>
+      <Link to=path className="text-base"> {React.string("View all \u21DD")} </Link>
     )}
   </div>

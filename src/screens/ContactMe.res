@@ -1,6 +1,6 @@
 @react.component
 let make = () =>
-  <div className="flex flex-col gap-8 lg:gap-12">
+  <div className="flex flex-col gap-8 lg:gap-12 animate-show-up">
     <ScreenHeader title="contacts" subTitle="Where am I?" />
     <ContactMeBanner />
     <SectionHeader title="all-media" lineWidth="0" />

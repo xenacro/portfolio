@@ -6,14 +6,15 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    app: "./src/Main.bs.js"
+    app: "./src/Main.bs.js",
   },
   devServer: {
     static: {
-        directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, "dist"),
     },
     compress: true,
-    port: 3000
+    port: 3000,
+    historyApiFallback: true,
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
@@ -21,6 +22,7 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
   },
   module: {
     rules: [
@@ -30,7 +32,7 @@ module.exports = {
           {
             loader: "babel-loader",
             options: { presets: ["@babel/preset-react"] },
-          }
+          },
         ],
       },
       {
@@ -71,9 +73,5 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new MiniCssExtractPlugin(),
-    new webpack.DefinePlugin({})
-  ]
+  plugins: [new MiniCssExtractPlugin(), new webpack.DefinePlugin({})],
 };
-
