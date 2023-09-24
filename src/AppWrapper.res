@@ -6,7 +6,8 @@ let make = () =>
       <Header />
       <AbsoluteShapes showFull=false />
       // <Home />
-      <Works />
+      // <Works />
+      <AboutMe />
     </div>
     <Footer />
   </div>
