@@ -3,17 +3,17 @@ let make = () => {
   let url = RescriptReactRouter.useUrl()
   let (isLoading, setIsLoading) = React.useState(_ => true)
   let (screen, setScreen) = React.useState(_ => <NotFound isLoading=true />)
-  let scrollToId = () => {
-    Webapi.Dom.document
-    ->Webapi.Dom.Document.getElementById(url.hash)
-    ->Belt.Option.mapWithDefault((), Webapi.Dom.Element.scrollIntoView)
-  }
+  // let scrollToId = () => {
+  //   Webapi.Dom.document
+  //   ->Webapi.Dom.Document.getElementById(url.hash)
+  //   ->Belt.Option.mapWithDefault((), Webapi.Dom.Element.scrollIntoView)
+  // }
   let updateScreen = () => {
     setScreen(_ =>
       switch url.path {
       | list{} => <Home />
       | list{"projects"} => <Works />
-      | list{"about-me"} => <AboutMe />
+      | list{"about"} => <AboutMe />
       | list{"contacts"} => <ContactMe />
       | _ => <NotFound isLoading=false />
       }
@@ -29,10 +29,10 @@ let make = () => {
     }
     None
   }, [url.path])
-  React.useEffect1(() => {
-    scrollToId()
+  React.useEffect0(() => {
+    CustomUtils.scrollToId(~id=url.hash, ~timeOut=1200)
     None
-  }, [url.hash])
+  })
   <div
     className={`bg-[#282C33] text-white font-['Fira_Code'] flex flex-col min-h-screen ${isLoading
         ? "animate-simmer"

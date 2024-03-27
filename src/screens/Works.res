@@ -3,7 +3,7 @@ let make = () =>
   <div className="flex flex-col gap-8 lg:gap-12 animate-show-up">
     <ScreenHeader title="projects" subTitle="List of my projects" />
     <SectionHeader title="complete-apps" lineWidth="0" />
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
       {Belt.Array.make(5, 0)
       ->Js.Array2.mapi((_, idx) =>
         <ProjectTile

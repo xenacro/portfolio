@@ -11,10 +11,11 @@ let make = () =>
       <p className="text-base leading-5 text-secondary">
         {React.string("He crafts responsive websites where technologies meet creativity")}
       </p>
-      <button
-        className="border border-solid border-primary font-medium text-base leading-5 px-4 py-2 w-40 hover:border-[#af5ec6]">
+      <Link
+        to="#contacts"
+        className="border border-solid border-primary font-medium text-base leading-5 px-4 py-2 w-40 hover:border-[#af5ec6] text-center">
         {React.string("Contact me !!")}
-      </button>
+      </Link>
     </div>
     <div className="flex-grow flex flex-col gap-0 items-center">
       <img src="/assets/icons/banner-img.png" className="w-full" />

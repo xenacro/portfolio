@@ -5,24 +5,24 @@ let make = () =>
       <div>
         <p>
           {React.string("XeNaCrO\u00A0")}
-          <a href="/something" target="_blank" className="text-secondary">
-            {React.string("xenacro@email.com")}
-          </a>
+          <ExternalLink href="mailto:kayush054@gmail.com" className="text-secondary">
+            {React.string("kayush054@gmail.com")}
+          </ExternalLink>
         </p>
         <p> {React.string("Web Developer and System Architect")} </p>
       </div>
       <div>
         <p className="font-bold text-right"> {React.string("Media")} </p>
         <div className="flex gap-2">
-          <a href="/something" target="_blank">
+          <ExternalLink href="https://github.com/xenacro">
             <img src="/assets/icons/github.svg" className="w-8 h-8" />
-          </a>
-          <a href="/something" target="_blank">
+          </ExternalLink>
+          <ExternalLink href="https://www.linkedin.com/in/xenacro/">
             <img src="/assets/icons/linkedin.svg" className="w-8 h-8" />
-          </a>
-          <a href="/something" target="_blank">
+          </ExternalLink>
+          <ExternalLink href="https://github.com/xenacro">
             <img src="/assets/icons/github.svg" className="w-8 h-8" />
-          </a>
+          </ExternalLink>
         </div>
       </div>
     </div>
