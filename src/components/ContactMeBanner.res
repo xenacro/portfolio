@@ -10,15 +10,15 @@ let make = () =>
       <p> {React.string("Message me here")} </p>
       <div className="flex gap-1 text-secondary place-items-center">
         <img src="/assets/icons/github.svg" className="w-8 h-8" />
-        <a href="/redirect" target="_blank" className="hover:text-white">
+        <ExternalLink href="https://github.com/xenacro" className="hover:text-white">
           {React.string("xenacro")}
-        </a>
+        </ExternalLink>
       </div>
       <div className="flex gap-1 text-secondary place-items-center">
         <img src="/assets/icons/github.svg" className="w-8 h-8" />
-        <a href="/redirect" target="_blank" className="hover:text-white">
+        <ExternalLink href="mailto:kayush054@gmail.com" className="hover:text-white">
           {React.string("kayush054@gmail.com")}
-        </a>
+        </ExternalLink>
       </div>
     </div>
   </div>

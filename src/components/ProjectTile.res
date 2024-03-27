@@ -8,8 +8,8 @@ let make = (~className, ~thumbnail=None, ~tags, ~title, ~description, ~link) =>
     <div className="flex flex-col gap-3 p-2">
       <p className="text-2xl"> {React.string(title)} </p>
       <p> {React.string(description)} </p>
-      <a href=link className="border border-solid border-secondary px-3 py-1 w-fit" target="_blank">
+      <ExternalLink href=link className="border border-solid border-secondary px-3 py-1 w-fit">
         {React.string("View Code \u21DD")}
-      </a>
+      </ExternalLink>
     </div>
   </div>

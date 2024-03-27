@@ -1,6 +1,6 @@
 @react.component
 let make = () =>
-  <div className="flex flex-col gap-8 lg:gap-12" id="works">
+  <div className="flex flex-col gap-8 lg:gap-12" id="skills">
     <SectionHeader title="skills" lineWidth="16rem" />
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
       <img className="hidden lg:block p-8" src="/assets/icons/banner-img.png" />
