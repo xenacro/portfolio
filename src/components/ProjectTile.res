@@ -13,9 +13,16 @@ let make = (~className, ~thumbnail=None, ~data: Types.minorProjectData) =>
         default={<p className="text-2xl"> {React.string(data.name)} </p>}
       />
       <p> {React.string(data.description)} </p>
-      <ExternalLink
-        href=data.code_link className="border border-solid border-secondary px-3 py-1 w-fit">
-        {React.string("View Code \u21DD")}
-      </ExternalLink>
+      <UiUtils.RenderOptional
+        data=data.code_link
+        logic={href =>
+          <ExternalLink href className="border border-solid border-secondary px-3 py-1 w-fit">
+            {React.string("View Code \u21DD")}
+          </ExternalLink>}
+        default={<p
+          className="border border-solid border-secondary px-3 py-1 w-fit cursor-not-allowed">
+          {React.string("Private Repo")}
+        </p>}
+      />
     </div>
   </div>

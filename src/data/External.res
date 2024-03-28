@@ -73,9 +73,8 @@ let getParsedMajorProjectArray = () =>
         getOptionalString(ele, "technologies"),
         getOptionalString(ele, "name"),
         getOptionalString(ele, "description"),
-        getOptionalString(ele, "code_link"),
       ) {
-      | (Some(thumbnail), Some(technologies), Some(name), Some(description), Some(link)) =>
+      | (Some(thumbnail), Some(technologies), Some(name), Some(description)) =>
         Some(
           (
             {
@@ -83,7 +82,7 @@ let getParsedMajorProjectArray = () =>
                 technologies,
                 name,
                 description,
-                code_link: link,
+                code_link: getOptionalString(ele, "code_link"),
                 app_link: getOptionalString(ele, "app_link"),
               },
               thumbnail,
@@ -109,16 +108,15 @@ let getParsedMinorProjectArray = () =>
         getOptionalString(ele, "technologies"),
         getOptionalString(ele, "name"),
         getOptionalString(ele, "description"),
-        getOptionalString(ele, "code_link"),
       ) {
-      | (Some(technologies), Some(name), Some(description), Some(link)) =>
+      | (Some(technologies), Some(name), Some(description)) =>
         Some(
           (
             {
               technologies,
               name,
               description,
-              code_link: link,
+              code_link: getOptionalString(ele, "code_link"),
               app_link: getOptionalString(ele, "app_link"),
             }: Types.minorProjectData
           ),

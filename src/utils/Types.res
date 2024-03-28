@@ -38,7 +38,7 @@ type minorProjectData = {
   technologies: string,
   name: string,
   description: string,
-  code_link: string,
+  code_link: option<string>,
   app_link: option<string>,
 }
 

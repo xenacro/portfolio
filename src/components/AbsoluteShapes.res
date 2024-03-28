@@ -32,5 +32,5 @@ let make = (~count=1) =>
       ->React.array}
     </div>,
   ]
-  ->Js.Array2.slice(~start=0, ~end_=count)
+  ->CustomUtils.maxNelems(count)
   ->React.array

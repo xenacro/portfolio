@@ -30,13 +30,17 @@ let make = () => {
             className="flex flex-col gap-8"
             textSize=ExtraLarge
           />
-          <div className="flex justify-center gap-2">
-            {CustomUtils.maxNelems(Data.profiles, 3)
-            ->Js.Array2.mapi((item, i) =>
-              <SocialMediaItem profile=item size=Large key={Belt.Int.toString(i)} />
-            )
-            ->React.array}
-          </div>
+          <UiUtils.RenderOptional
+            data={External.getMedia()}
+            logic={profiles =>
+              <div className="flex justify-center gap-2">
+                {CustomUtils.maxNelems(profiles, 3)
+                ->Js.Array2.mapi((item, i) =>
+                  <SocialMediaItem profile=item size=Large key={Belt.Int.toString(i)} />
+                )
+                ->React.array}
+              </div>}
+          />
         </div>
       : React.null}
     <UiUtils.RenderOptional data={External.getMedia()} logic={data => <StickyMedia data />} />

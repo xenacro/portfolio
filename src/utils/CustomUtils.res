@@ -2,7 +2,7 @@
 external scrollIntoView: (Dom.element, option<{"behavior": string, "block": string}>) => unit =
   "scrollIntoView"
 
-let maxNelems = (arr, n) => Js.Array2.filteri(arr, (_, i) => i < n)
+let maxNelems = (arr, n) => Js.Array2.slice(arr, ~start=0, ~end_=n)
 
 let scrollToId = (~timeOut, ~id) => Js.Global.setTimeout(() => {
     open Webapi
@@ -13,30 +13,24 @@ let scrollToId = (~timeOut, ~id) => Js.Global.setTimeout(() => {
     }
   }, timeOut)->ignore
 
+let getNormalText = (str): Types.textType => {
+  str,
+  style: #normal,
+}
+
+let getBoldText = (str): Types.textType => {
+  str,
+  style: #bold,
+}
+
 let parseText = str =>
   str
   ->Js.String2.split("#BOLD_START#")
   ->Js.Array2.map(Js.String2.split(_, "#BOLD_END#"))
   ->Js.Array2.map(i => {
     switch i {
-    | [a] => [
-        (
-          {
-            str: a,
-            style: #normal,
-          }: Types.textType
-        ),
-      ]
-    | [a, b] => [
-        {
-          str: a,
-          style: #bold,
-        },
-        {
-          str: b,
-          style: #normal,
-        },
-      ]
+    | [a] => [getNormalText(a)]
+    | [a, b] => [getBoldText(a), getNormalText(b)]
     | _ => []
     }
   })
