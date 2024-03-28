@@ -10,6 +10,20 @@ let pageToURL = page =>
   }
 
 type profileInfo = {
-  icon: string,
+  display: string,
   url: string,
+}
+
+type styles = [#bold | #normal]
+
+type textType = {
+  str: string,
+  style: styles,
+}
+
+type bannerData = {
+  banner_img: string,
+  banner_heading: string,
+  banner_text: string,
+  current_project: profileInfo,
 }
