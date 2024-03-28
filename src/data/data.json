@@ -145,11 +145,25 @@
         "contacts": [
             {
                 "text": "xenacro",
+                "icon": "/assets/icons/github.svg",
                 "link": "https://github.com/xenacro"
             },
             {
                 "text": "kayush054@gmail.com",
+                "icon": "/assets/icons/github.svg",
                 "link": "mailto:kayush054@gmail.com"
+            },
+            {
+                "text": "kayush054@gmail.com",
+                "icon": "/assets/icons/github.svg",
+                "link": "mailto:kayush054@gmail.com"
+            }
+        ],
+        "fund_raisers": [
+            {
+                "text": "xenacro",
+                "icon": "/assets/icons/github.svg",
+                "link": "https://github.com/xenacro"
             }
         ]
     },
@@ -157,30 +171,19 @@
     "role": "Web Developer and System Architect",
     "media": [
         {
-            "icon": "",
-            "link": "https://github.com/xenacro"
-        },
-        {
-            "icon": "",
-            "link": "https://github.com/xenacro"
-        },
-        {
-            "icon": "",
-            "link": "https://github.com/xenacro"
-        }
-    ],
-    "stickey_data": [
-        {
             "icon": "/assets/icons/github.svg",
-            "url": "https://github.com/xenacro"
-        },
-        {
-            "icon": "/assets/icons/leetcode.svg",
-            "url": "https://leetcode.com/xenacro/"
+            "text": "",
+            "link": "https://github.com/xenacro"
         },
         {
             "icon": "/assets/icons/linkedin.svg",
-            "url": "https://www.linkedin.com/in/xenacro/"
+            "text": "",
+            "link": "https://github.com/xenacro"
+        },
+        {
+            "icon": "/assets/icons/github.svg",
+            "text": "",
+            "link": "https://github.com/xenacro"
         }
     ]
 }

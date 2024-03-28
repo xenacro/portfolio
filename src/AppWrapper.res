@@ -3,18 +3,20 @@ let make = () => {
   let url = RescriptReactRouter.useUrl()
   let (isLoading, setIsLoading) = React.useState(_ => true)
   let (screen, setScreen) = React.useState(_ => <NotFound isLoading=true />)
-  // let scrollToId = () => {
-  //   Webapi.Dom.document
-  //   ->Webapi.Dom.Document.getElementById(url.hash)
-  //   ->Belt.Option.mapWithDefault((), Webapi.Dom.Element.scrollIntoView)
-  // }
+
   let updateScreen = () => {
     setScreen(_ =>
       switch url.path {
       | list{} => <Home />
-      | list{"projects"} => <Works />
-      | list{"about"} => <AboutMe />
-      | list{"contacts"} => <ContactMe />
+      | list{"projects"} =>
+        <UiUtils.RenderOptional data={External.getProject()} logic={data => <Works data />} />
+      | list{"about"} =>
+        <UiUtils.RenderOptional
+          data={External.getAboutMe()}
+          logic={data => <AboutMe data skills={External.getSkills()} />}
+        />
+      | list{"contacts"} =>
+        <UiUtils.RenderOptional data={External.getContactMe()} logic={data => <ContactMe data />} />
       | _ => <NotFound isLoading=false />
       }
     )

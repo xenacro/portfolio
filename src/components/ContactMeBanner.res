@@ -1,24 +1,19 @@
 @react.component
-let make = () =>
+let make = (~data: Types.contactMe) =>
   <div className="flex flex-col lg:flex-row justify-between gap-16">
-    <p className="max-w-lg text-secondary">
-      {React.string(
-        "I'm interested in freelance opportunities. However, if you have other request or question, don't hesitate to contact me",
-      )}
-    </p>
+    <p className="max-w-lg text-secondary"> {React.string(data.pitch)} </p>
     <div className="border border-solid border-secondary max-w-[15rem] p-4 flex flex-col gap-4">
       <p> {React.string("Message me here")} </p>
-      <div className="flex gap-1 text-secondary place-items-center">
-        <img src="/assets/icons/github.svg" className="w-8 h-8" />
-        <ExternalLink href="https://github.com/xenacro" className="hover:text-white">
-          {React.string("xenacro")}
-        </ExternalLink>
-      </div>
-      <div className="flex gap-1 text-secondary place-items-center">
-        <img src="/assets/icons/github.svg" className="w-8 h-8" />
-        <ExternalLink href="mailto:kayush054@gmail.com" className="hover:text-white">
-          {React.string("kayush054@gmail.com")}
-        </ExternalLink>
-      </div>
+      {data.contacts
+      ->Js.Array2.slice(~start=0, ~end_=2)
+      ->Js.Array2.mapi((ele, idx) =>
+        <div className="flex gap-1 text-secondary place-items-center" key={idx->Belt.Int.toString}>
+          <UiUtils.RenderOptional data=ele.icon logic={src => <img src className="w-8 h-8" />} />
+          <ExternalLink href=ele.url className="hover:text-white">
+            {React.string(ele.display)}
+          </ExternalLink>
+        </div>
+      )
+      ->React.array}
     </div>
   </div>

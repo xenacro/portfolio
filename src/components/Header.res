@@ -39,6 +39,6 @@ let make = () => {
           </div>
         </div>
       : React.null}
-    <StickyMedia />
+    <UiUtils.RenderOptional data={External.getMedia()} logic={data => <StickyMedia data />} />
   </>
 }

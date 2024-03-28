@@ -42,13 +42,22 @@ let parseText = str =>
   })
   ->Js.Array.concatMany([])
 
-module Dict = {
+let rec getTupleArr = (acc, strings) =>
+  switch strings {
+  | list{} => acc
+  | list{str} => acc->Js.Array2.concat([(str, None)])
+  | list{str1, str2, ...rest} => getTupleArr(acc->Js.Array2.concat([(str1, Some(str2))]), rest)
+  }
+
+module Option = {
   let getOptionalWithDecoder = (dict, key, decoder) =>
     Js.Dict.get(dict, key)->Belt.Option.flatMap(decoder)
 
   let getOptionalString = (dict, key) => getOptionalWithDecoder(dict, key, Js.Json.decodeString)
 
   let getOptionalObject = (dict, key) => getOptionalWithDecoder(dict, key, Js.Json.decodeObject)
+
+  let getOptionalArray = (dict, key) => getOptionalWithDecoder(dict, key, Js.Json.decodeArray)
 
   let getFromOptionalObjectWithDecoder = (optDict, key, decoder) =>
     Belt.Option.flatMap(optDict, getOptionalWithDecoder(_, key, decoder))
@@ -58,4 +67,20 @@ module Dict = {
 
   let getOptionalObjectFromOptionalDict = (optDict, key) =>
     getFromOptionalObjectWithDecoder(optDict, key, Js.Json.decodeObject)
+
+  let getOptionalArrayFromOptionalDict = (optDict, key) =>
+    getFromOptionalObjectWithDecoder(optDict, key, Js.Json.decodeArray)
+
+  let arrayOfOptionToOptionalArray = arr => arr->Js.Array2.reduce((acc, ele) => {
+      switch (ele, acc) {
+      | (Some(el), Some(ac)) => ac->Js.Array2.concat([el])->Some
+      | _ => None
+      }
+    }, Some([]))
+
+  let parseJsonArrayToObjectArray = arr =>
+    arr->Js.Array2.map(Js.Json.decodeObject)->arrayOfOptionToOptionalArray
+
+  let parseJsonArrayToStringArray = arr =>
+    arr->Js.Array2.map(Js.Json.decodeString)->arrayOfOptionToOptionalArray
 }

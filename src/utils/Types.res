@@ -10,6 +10,7 @@ let pageToURL = page =>
   }
 
 type profileInfo = {
+  icon: option<string>,
   display: string,
   url: string,
 }
@@ -26,4 +27,44 @@ type bannerData = {
   banner_heading: string,
   banner_text: string,
   current_project: profileInfo,
+}
+
+type feeler = {
+  quote: string,
+  author: string,
+}
+
+type minorProjectData = {
+  technologies: string,
+  name: string,
+  description: string,
+  code_link: string,
+  app_link: option<string>,
+}
+
+type majorProjectData = {
+  projectData: minorProjectData,
+  thumbnail: string,
+}
+
+type projects = {
+  major: array<majorProjectData>,
+  minor: array<minorProjectData>,
+}
+
+type skills = {
+  language: string,
+  databases: string,
+  tools: string,
+  frameworks: string,
+  others: string,
+  skills_img: string,
+}
+
+type aboutMe = {intro: array<string>, about_img: string, fun_facts: array<string>}
+
+type contactMe = {
+  pitch: string,
+  contacts: array<profileInfo>,
+  fundRaisers: array<profileInfo>,
 }
