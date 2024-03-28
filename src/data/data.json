@@ -1,0 +1,172 @@
+{
+    "hero_img": "/assets/icons/hero_img.svg",
+    "banner": {
+        "banner_img": "/assets/icons/banner-img.png",
+        "banner_heading": "XeNaCrO is a #BOLD_START#Web Developer#BOLD_END# and #BOLD_START#System Architect#BOLD_END#",
+        "banner_text": "He crafts responsive websites where technologies meet creativity",
+        "current_project": {
+            "name": "Portfolio",
+            "link": "https://github.com/xenacro/portfolio"
+        }
+    },
+    "feeler_quote": {
+        "quote": "With great power comes great electricity bill",
+        "author": "Dr. Who"
+    },
+    "projects": {
+        "major": [
+            {
+                "thumbnail": "/assets/icons/banner-img.png",
+                "technologies": "HTML CSS Python Flask",
+                "name": "SomeName",
+                "description": "Small Description",
+                "code_link": "https://github.com/xenacro/portfolio",
+                "app_link": ""
+            },
+            {
+                "thumbnail": "/assets/icons/banner-img.png",
+                "technologies": "HTML CSS Python Flask",
+                "name": "SomeName",
+                "description": "Small Description",
+                "code_link": "https://github.com/xenacro/portfolio",
+                "app_link": ""
+            },
+            {
+                "thumbnail": "/assets/icons/banner-img.png",
+                "technologies": "HTML CSS Python Flask",
+                "name": "SomeName",
+                "description": "Small Description",
+                "code_link": "https://github.com/xenacro/portfolio",
+                "app_link": ""
+            },
+            {
+                "thumbnail": "/assets/icons/banner-img.png",
+                "technologies": "HTML CSS Python Flask",
+                "name": "SomeName",
+                "description": "Small Description",
+                "code_link": "https://github.com/xenacro/portfolio",
+                "app_link": ""
+            },
+            {
+                "thumbnail": "/assets/icons/banner-img.png",
+                "technologies": "HTML CSS Python Flask",
+                "name": "SomeName",
+                "description": "Small Description",
+                "code_link": "https://github.com/xenacro/portfolio",
+                "app_link": ""
+            }
+        ],
+        "minor": [
+            {
+                "technologies": "HTML CSS Python Flask",
+                "name": "SomeName",
+                "description": "Small Description",
+                "code_link": "https://github.com/xenacro/portfolio",
+                "app_link": ""
+            },
+            {
+                "technologies": "HTML CSS Python Flask",
+                "name": "SomeName",
+                "description": "Small Description",
+                "code_link": "https://github.com/xenacro/portfolio",
+                "app_link": ""
+            },
+            {
+                "technologies": "HTML CSS Python Flask",
+                "name": "SomeName",
+                "description": "Small Description",
+                "code_link": "https://github.com/xenacro/portfolio",
+                "app_link": ""
+            },
+            {
+                "technologies": "HTML CSS Python Flask",
+                "name": "SomeName",
+                "description": "Small Description",
+                "code_link": "https://github.com/xenacro/portfolio",
+                "app_link": ""
+            },
+            {
+                "technologies": "HTML CSS Python Flask",
+                "name": "SomeName",
+                "description": "Small Description",
+                "code_link": "https://github.com/xenacro/portfolio",
+                "app_link": ""
+            },
+            {
+                "technologies": "HTML CSS Python Flask",
+                "name": "SomeName",
+                "description": "Small Description",
+                "code_link": "https://github.com/xenacro/portfolio",
+                "app_link": ""
+            },
+            {
+                "technologies": "HTML CSS Python Flask",
+                "name": "SomeName",
+                "description": "Small Description",
+                "code_link": "https://github.com/xenacro/portfolio",
+                "app_link": ""
+            },
+            {
+                "technologies": "HTML CSS Python Flask",
+                "name": "SomeName",
+                "description": "Small Description",
+                "code_link": "https://github.com/xenacro/portfolio",
+                "app_link": ""
+            }
+        ]
+    },
+    "skills": {
+        "language": "JS PS RS TS",
+        "databases": "MySQL PSQL SQLite MongoDB",
+        "tools": "VSCode Linux Figma Git Jenkins",
+        "frameworks": "React Vue Angular Django Flask Haskel Presto React Vue Angular Django Flask Haskel Presto",
+        "others": "HTML CSS EJS JSX SCSS Rest",
+        "skills_img": "/assets/icons/banner-img.png"
+    },
+    "about_me": {
+        "intro": [
+            "Hello, I'm Xenacro!",
+            "I'm a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.",
+            "Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks."
+        ],
+        "about_img": "/assets/icons/banner-img.png",
+        "fun_facts": [
+            "I like winter more than summer",
+            "I often bike with my friends",
+            "I like pizza and pasta",
+            "I was in Egypt, Poland and Turkey",
+            "My favorite movie is The Green Mile",
+            "I am still in school",
+            "I like winter more than summer"
+        ]
+    },
+    "contact_me": {
+        "pitch": "I'm interested in freelance opportunities. However, if you have other request or question, don't hesitate to contact me",
+        "contacts": [
+            {
+                "text": "xenacro",
+                "link": "https://github.com/xenacro"
+            },
+            {
+                "text": "kayush054@gmail.com",
+                "link": "mailto:kayush054@gmail.com"
+            }
+        ]
+    },
+    "email": "kayush054@gmail.com",
+    "role": "Web Developer and System Architect",
+    "media": [
+        {
+            "icon": "",
+            "link": "https://github.com/xenacro"
+        },
+        {
+            "icon": "",
+            "link": "https://github.com/xenacro"
+        },
+        {
+            "icon": "",
+            "link": "https://github.com/xenacro"
+        }
+    ]
+}
