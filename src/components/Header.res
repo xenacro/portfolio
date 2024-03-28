@@ -4,7 +4,7 @@ let make = () => {
   <>
     <div className="flex justify-between h-6">
       <Link to="/" className="text-3xl">
-        <UiUtils.RenderOptional data={External.getBanner()} logic={src => <img src />} />
+        <UiUtils.RenderOptional data={External.getLogo()} logic={src => <img src />} />
       </Link>
       <div className="flex-grow flex justify-end lg:hidden">
         <div className="relative w-6 h-6" onClick={_ => setIsNavOpen(val => !val)}>
