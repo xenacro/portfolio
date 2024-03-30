@@ -1,7 +1,9 @@
 @react.component
 let make = (~className, ~thumbnail=None, ~data: Types.minorProjectData) =>
   <div className>
-    <UiUtils.RenderOptional data=thumbnail logic={src => <img src className="w-full border-b" />} />
+    <UiUtils.RenderOptional
+      data=thumbnail logic={src => <img src className="w-full border-b h-60 object-cover" />}
+    />
     <p className="border-b p-1"> {React.string(data.technologies)} </p>
     <div className="flex flex-col gap-3 p-2">
       <UiUtils.RenderOptional

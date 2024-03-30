@@ -16,5 +16,13 @@ let make = (~onClick=?, ~textSize: textSize=Normal, ~className) => {
       </Link>
     )
     ->React.array}
+    <UiUtils.RenderOptional
+      data={External.getResume()}
+      logic={href =>
+        <ExternalLink href className={isTextLarge ? "text-4xl" : ""}>
+          <span className="text-primary"> {React.string("👀 ")} </span>
+          {React.string("My Resume")}
+        </ExternalLink>}
+    />
   </div>
 }

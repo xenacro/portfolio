@@ -6,3 +6,8 @@ module RenderOptional = {
     | Some(a) => logic(a)
     }
 }
+
+module RenderIf = {
+  @react.component
+  let make = (~condition, ~children, ~default=React.null) => condition ? children : default
+}
