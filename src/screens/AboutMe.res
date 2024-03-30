@@ -11,7 +11,7 @@ module FunFacts = {
   let make = (~first, ~second) =>
     <div className="flex gap-4">
       <FunFact text=first />
-      <UiUtils.RenderOptional data=second logic={text => <FunFact text=first />} />
+      <UiUtils.RenderOptional data=second logic={text => <FunFact text />} />
     </div>
 }
 

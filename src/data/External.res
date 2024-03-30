@@ -5,6 +5,9 @@ open CustomUtils.Option
 let getLogo = () => getOptionalString(data, "hero_img")
 
 //------------
+let getResume = () => getOptionalString(data, "resume")
+
+//------------
 let getBannerData = () => getOptionalObject(data, "banner")
 
 let getStringFromBanner = getOptionalStringFromOptionalDict(getBannerData())
