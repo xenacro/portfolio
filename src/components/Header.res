@@ -3,7 +3,7 @@ let make = () => {
   let (isNavOpen, setIsNavOpen) = React.useState(_ => false)
   <>
     <div className="flex justify-between h-6">
-      <Link to="/" className="text-3xl">
+      <Link to=External.basepath className="text-3xl">
         <UiUtils.RenderOptional data={External.getLogo()} logic={src => <img src />} />
       </Link>
       <div className="flex-grow flex justify-end lg:hidden">

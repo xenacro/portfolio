@@ -1,10 +1,19 @@
 @val external environment: string = "ENVIRONMENT"
+external pageToStringU: Types.page => string = "%identity"
 
 @module external prodData: Js.Dict.t<Js.Json.t> = "./data.json"
 
 @module external localData: Js.Dict.t<Js.Json.t> = "./local_data.json"
 
 let data = environment == "DEV" ? localData : prodData
+
+let basepath = environment == "DEV" ? "/" : "/portfolio/"
+
+let pageToURL = page =>
+  switch page {
+  | #home => basepath
+  | x => `${basepath}#${pageToStringU(x)}`
+  }
 
 open CustomUtils.Option
 

@@ -8,7 +8,7 @@ let make = (~onClick=?, ~textSize: textSize=Normal, ~className) => {
     ->Js.Array2.mapi((item, i) =>
       <Link
         key={Belt.Int.toString(i)}
-        to={Types.pageToURL(item)}
+        to={External.pageToURL(item)}
         ?onClick
         className={isTextLarge ? "text-4xl" : ""}>
         <span className="text-primary"> {React.string("# ")} </span>

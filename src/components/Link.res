@@ -2,8 +2,8 @@
 let make = (~className="", ~to, ~children, ~onClick=?) => {
   let clickAction = () => {
     onClick->Belt.Option.mapWithDefault((), fn => fn())
-    if to->Js.String2.startsWith("/#") {
-      CustomUtils.scrollToId(~id=to->Js.String2.replace("/#", ""), ~timeOut=100)
+    if to->Js.String2.includes("/#") {
+      CustomUtils.scrollToId(~id=to->Js.String2.replaceByRe(%re("/.*\/#*/"), ""), ~timeOut=100)
     }
     RescriptReactRouter.push(to)
   }
