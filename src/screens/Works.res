@@ -16,7 +16,7 @@ let make = (~data: Types.projects) =>
       ->React.array}
     </div>
     <SectionHeader title="small-projects" lineWidth="0" />
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
       {data.minor
       ->Js.Array2.mapi((project, idx) =>
         <ProjectTile

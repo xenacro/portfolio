@@ -54,64 +54,69 @@
                 "technologies": "ReactNative MQTT Jenkins Github-Webhooks",
                 "name": "Rupin",
                 "description": "Home automation application that interacts with hardwares to make the home smart"
+            },
+            {
+                "technologies": "React(JS) NodeJs(express.js) Mongodb Mongoose Github APIs",
+                "name": "DevConnector",
+                "description": "Social media for connecting and showcasing dev skills to each others",
+                "code_link": "https://github.com/xenacro/devConnector",
+                "thumbnail": "/portfolio/assets/icons/dev-connector.png"
+            },
+            {
+                "technologies": "Django SQLite Bootstrap Tensorflow NumPy",
+                "name": "E-Diagnosis",
+                "description": "Machine Learning based web-app that takes MRI scan as input and predicts the probability of Alzheimer's stage. (about 80% accuracy)",
+                "code_link": "https://github.com/xenacro/e-diagnosis",
+                "thumbnail": "/portfolio/assets/icons/e-diagnosis.png"
             }
         ],
         "minor": [
             {
-                "technologies": "HTML CSS Python Flask",
-                "name": "SomeName",
-                "description": "Small Description",
-                "code_link": "https://github.com/xenacro/portfolio",
-                "app_link": ""
+                "technologies": "Flutter NodeJs(express.js) MySQL",
+                "name": "BookStoreApp",
+                "description": "An e-commerce app for searching, adding to cart and purchasing books",
+                "code_link": "https://github.com/jassi-singh/book-store-app"
             },
             {
-                "technologies": "HTML CSS Python Flask",
-                "name": "SomeName",
-                "description": "Small Description",
-                "code_link": "https://github.com/xenacro/portfolio",
-                "app_link": ""
+                "technologies": "HTML Bootstrap Javascript php MySQL",
+                "name": "GetMyCollege",
+                "description": "Configurable college details pages to find perfect college for students"
             },
             {
-                "technologies": "HTML CSS Python Flask",
-                "name": "SomeName",
-                "description": "Small Description",
-                "code_link": "https://github.com/xenacro/portfolio",
-                "app_link": ""
+                "technologies": "AWS(S3) Agora NodeJs MongoDB(Atlas) React 2-factor Paytm PG",
+                "name": "IIRWU Live Education",
+                "description": "A platform to connect with students and teach them with 2-way communication"
             },
             {
-                "technologies": "HTML CSS Python Flask",
-                "name": "SomeName",
-                "description": "Small Description",
-                "code_link": "https://github.com/xenacro/portfolio",
-                "app_link": ""
+                "technologies": "React Axios RestAPI NodeJs(express.js) MongoDB Mongoose",
+                "name": "BankData",
+                "description": "Search about banks in cities and get insights for comparision",
+                "code_link": "https://github.com/xenacro/bank-data",
+                "app_link": "https://xenacro.github.io/bank-data/"
             },
             {
-                "technologies": "HTML CSS Python Flask",
-                "name": "SomeName",
-                "description": "Small Description",
-                "code_link": "https://github.com/xenacro/portfolio",
-                "app_link": ""
+                "technologies": "NodeJs(express.js) sqlite3 Prisma Swagger Postman",
+                "name": "MilkManager",
+                "description": "APIs for adding and updating milk orders based on daily stock",
+                "code_link": "https://github.com/xenacro/milkmanager"
             },
             {
-                "technologies": "HTML CSS Python Flask",
-                "name": "SomeName",
-                "description": "Small Description",
-                "code_link": "https://github.com/xenacro/portfolio",
-                "app_link": ""
+                "technologies": "NodeJs(express.js TS) React(JS) Bootstrap Mongodb Mongoose",
+                "name": "VisitFrequencyCollector",
+                "description": "Collects and stores visit data for clients to show stats on period basis"
             },
             {
-                "technologies": "HTML CSS Python Flask",
-                "name": "SomeName",
-                "description": "Small Description",
-                "code_link": "https://github.com/xenacro/portfolio",
-                "app_link": ""
+                "technologies": "HTML Javascript",
+                "name": "Random",
+                "description": "Does some random stuff",
+                "code_link": "https://github.com/xenacro/Web-Development",
+                "app_link": "https://xenacro.github.io/Web-Development/"
             },
             {
-                "technologies": "HTML CSS Python Flask",
-                "name": "SomeName",
-                "description": "Small Description",
-                "code_link": "https://github.com/xenacro/portfolio",
-                "app_link": ""
+                "technologies": "C++ Leetcode codingninjas",
+                "name": "DSAbyTopic",
+                "description": "Some DSA and CP question based on topics",
+                "code_link": "https://github.com/xenacro/DSAbyTopic"
             }
         ]
     },
