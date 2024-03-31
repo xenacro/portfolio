@@ -15,6 +15,8 @@ let pageToURL = page =>
   | x => `${basepath}#${pageToStringU(x)}`
   }
 
+let getPageLink = pageName => `${basepath}?page=${pageName}`
+
 open CustomUtils.Option
 
 //------------
