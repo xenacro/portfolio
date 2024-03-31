@@ -15,8 +15,9 @@
   },
   "scripts": {
     "build": "ENVIRONMENT='PROD' webpack --config webpack.config.js",
-    "deploy": "gh-pages -d build",
-    "predeploy": "./prerelease.sh",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "autopush": "./autopush.sh",
     "start": "ENVIRONMENT='DEV' node ./node_modules/webpack/bin/webpack.js serve --port 3000",
     "re:build": "rescript",
     "re:build:deps": "rescript build -with-deps",
