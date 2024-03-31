@@ -4,33 +4,33 @@ let make = () => {
   let (isLoading, setIsLoading) = React.useState(_ => true)
   let (screen, setScreen) = React.useState(_ => <NotFound isLoading=true />)
 
-  let updateScreen = () => {
+  let updateScreen = search => {
     setScreen(_ =>
-      switch url.path {
-      | list{} => <Home />
-      | list{"projects"} =>
+      switch search->CustomUtils.getFromSearchParam("page") {
+      | None => <Home />
+      | Some("projects") =>
         <UiUtils.RenderOptional data={External.getProject()} logic={data => <Works data />} />
-      | list{"about"} =>
+      | Some("about") =>
         <UiUtils.RenderOptional
           data={External.getAboutMe()}
           logic={data => <AboutMe data skills={External.getSkills()} />}
         />
-      | list{"contacts"} =>
+      | Some("contacts") =>
         <UiUtils.RenderOptional data={External.getContactMe()} logic={data => <ContactMe data />} />
-      | _ => <NotFound isLoading=false />
+      | Some(_) => <NotFound isLoading=false />
       }
     )
     Webapi.Dom.window->Webapi.Dom.Window.scrollTo(0.0, 0.0)
   }
   React.useEffect1(() => {
     if isLoading {
-      Js.Global.setTimeout(updateScreen, 1000)->ignore
+      Js.Global.setTimeout(_ => updateScreen(url.search), 1000)->ignore
       setIsLoading(_ => false)
     } else {
-      updateScreen()
+      updateScreen(url.search)
     }
     None
-  }, [url.path])
+  }, [url.search])
   React.useEffect0(() => {
     CustomUtils.scrollToId(~id=url.hash, ~timeOut=1200)
     None

@@ -78,3 +78,18 @@ module Option = {
   let parseJsonArrayToStringArray = arr =>
     arr->Js.Array2.map(Js.Json.decodeString)->arrayOfOptionToOptionalArray
 }
+
+let searchParamToDict = search =>
+  search
+  ->Js.String2.split("&")
+  ->Js.Array2.map(Js.String.split("="))
+  ->Js.Array2.map(ele =>
+    switch (ele->Belt.Array.get(0), ele->Belt.Array.get(1)) {
+    | (Some(key), Some(val)) => (key, val)
+    | _ => ("__key__", "__val__")
+    }
+  )
+  ->Js.Array2.filter(((key, _)) => key != "__key__")
+  ->Js.Dict.fromArray
+
+let getFromSearchParam = search => search->searchParamToDict->Js.Dict.get

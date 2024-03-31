@@ -14,8 +14,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "start": "node ./node_modules/webpack/bin/webpack.js serve --port 3000",
+    "build": "ENVIRONMENT='PROD' webpack --config webpack.config.js",
+    "deploy": "./prerelease.sh",
+    "start": "ENVIRONMENT='DEV' node ./node_modules/webpack/bin/webpack.js serve --port 3000",
     "re:build": "rescript",
     "re:build:deps": "rescript build -with-deps",
     "re:start": "rescript build -w",

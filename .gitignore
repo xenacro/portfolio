@@ -5,3 +5,5 @@ dist/app.css
 dist/*.js
 dist/index.html
 lib/bs
+
+/src/data/local_data.json

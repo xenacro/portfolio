@@ -73,5 +73,10 @@ module.exports = {
       },
     ],
   },
-  plugins: [new MiniCssExtractPlugin(), new webpack.DefinePlugin({})],
+  plugins: [
+    new MiniCssExtractPlugin(),
+    new webpack.DefinePlugin({
+      ENVIRONMENT: JSON.stringify(process.env.ENVIRONMENT),
+    }),
+  ],
 };

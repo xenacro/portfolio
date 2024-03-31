@@ -1,4 +1,11 @@
-@module external data: Js.Dict.t<Js.Json.t> = "./data.json"
+@val external environment: string = "ENVIRONMENT"
+
+@module external prodData: Js.Dict.t<Js.Json.t> = "./data.json"
+
+@module external localData: Js.Dict.t<Js.Json.t> = "./local_data.json"
+
+let data = environment == "DEV" ? localData : prodData
+
 open CustomUtils.Option
 
 //------------
