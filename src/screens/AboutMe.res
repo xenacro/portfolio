@@ -19,7 +19,7 @@ module FunFacts = {
 let make = (~skills: option<Types.skills>, ~data: Types.aboutMe) =>
   <div className="flex flex-col gap-8 lg:gap-12 animate-show-up">
     <ScreenHeader title="about-me" subTitle="Who am I?" />
-    <AboutMeBanner intro=data.intro />
+    <AboutMeBanner intro=data.intro aboutImg=data.about_img />
     <SectionHeader title="skills" lineWidth="0" />
     <UiUtils.RenderOptional
       data=skills

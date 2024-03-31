@@ -1,5 +1,5 @@
 @react.component
-let make = (~completeLink=None, ~intro) =>
+let make = (~completeLink=None, ~intro, ~aboutImg) =>
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
     <div className="text-secondary flex flex-col gap-4">
       {intro
@@ -11,5 +11,5 @@ let make = (~completeLink=None, ~intro) =>
         </Link>
       )}
     </div>
-    <img className="hidden lg:block" src="/assets/icons/banner-img.png" />
+    <img className="hidden lg:block" src=aboutImg />
   </div>
