@@ -56,6 +56,12 @@
                 "description": "Home automation application that interacts with hardwares to make the home smart"
             },
             {
+                "thumbnail": "/portfolio/assets/icons/rupin-assist.png",
+                "technologies": "Python(Django) ML(Rasa) Javascript",
+                "name": "Rupin Assist",
+                "description": "ML based, easy integratable chatbot with intent to action mapping for great end user experience"
+            },
+            {
                 "technologies": "React(JS) NodeJs(express.js) Mongodb Mongoose Github APIs",
                 "name": "DevConnector",
                 "description": "Social media for connecting and showcasing dev skills to each others",
