@@ -14,17 +14,18 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build": "ENVIRONMENT='PROD' webpack --config webpack.config.js",
+    "build": "cross-env ENVIRONMENT='PROD' webpack --config webpack.config.js",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build",
     "autopush": "./autopush.sh",
-    "start": "ENVIRONMENT='DEV' node ./node_modules/webpack/bin/webpack.js serve --port 3000",
+    "start": "cross-env ENVIRONMENT='DEV' node ./node_modules/webpack/bin/webpack.js serve --port 3000",
     "re:build": "rescript",
     "re:build:deps": "rescript build -with-deps",
     "re:start": "rescript build -w",
     "re:clean": "rescript clean -with-deps"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "css-loader": "^6.8.1",
     "gh-pages": "^6.1.1",
     "rescript": "^10.1.4",

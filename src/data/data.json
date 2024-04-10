@@ -2,7 +2,7 @@
     "hero_img": "/portfolio/assets/icons/hero_img.svg",
     "resume": "https://drive.google.com/file/d/1CW1yLdnOvBXJNe41aLX3IEixYjFunYLS/view?usp=sharing",
     "banner": {
-        "banner_img": "/portfolio/assets/icons/banner-img.png",
+        "banner_img": "/portfolio/assets/icons/me-casual.jpg",
         "banner_heading": "XeNaCrO is a #BOLD_START#Web Developer#BOLD_END# and #BOLD_START#System Architect#BOLD_END#",
         "banner_text": "He crafts responsive websites where technologies meet creativity",
         "current_project": {
@@ -44,12 +44,6 @@
                 "description": "Find blue-collared service provider and make contract of getting it fulfilled in time."
             },
             {
-                "thumbnail": "/portfolio/assets/icons/allpoker.png",
-                "technologies": "React AWS(EC2 S3) Jenkins Github-Webhooks",
-                "name": "Allpoker",
-                "description": "Play poker in hybrid mode (either online or by visiting the casino) simultaneously."
-            },
-            {
                 "thumbnail": "/portfolio/assets/icons/rupin.png",
                 "technologies": "ReactNative MQTT Jenkins Github-Webhooks",
                 "name": "Rupin",
@@ -60,6 +54,12 @@
                 "technologies": "Python(Django) ML(Rasa) Javascript",
                 "name": "Rupin Assist",
                 "description": "ML based, easy integratable chatbot with intent to action mapping for great end user experience"
+            },
+            {
+                "thumbnail": "/portfolio/assets/icons/allpoker.png",
+                "technologies": "React AWS(EC2 S3) Jenkins Github-Webhooks",
+                "name": "Allpoker",
+                "description": "Play poker in hybrid mode (either online or by visiting the casino) simultaneously."
             },
             {
                 "technologies": "React(JS) NodeJs(express.js) Mongodb Mongoose Github APIs",
@@ -132,7 +132,7 @@
         "tools": "VSCode Linux Jira Postman",
         "frameworks": "Node.js/Express.js React Django/Flask CSS(SCSS Tailwind Bootstrap) MaterialUI ReactNative(react-native CLI Expo CLI) Flutter",
         "others": "AWS(EC2 S3) VCS(Git GitHub BitBucket & Others) Jenkins MQTT",
-        "skills_img": "/portfolio/assets/icons/banner-img.png"
+        "skills_img": "/portfolio/assets/icons/me-bike.jpg"
     },
     "about_me": {
         "intro": [
@@ -140,7 +140,7 @@
             "I'm a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.",
             "Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks."
         ],
-        "about_img": "/portfolio/assets/icons/banner-img.png",
+        "about_img": "/portfolio/assets/icons/me-formal.jpg",
         "fun_facts": [
             "I like winter more than summer",
             "I often bike with my friends",

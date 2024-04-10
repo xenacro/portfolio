@@ -3,7 +3,7 @@ let make = (~data: Types.skills) =>
   <div className="flex flex-col gap-8 lg:gap-12" id="skills">
     <SectionHeader title="skills" lineWidth="16rem" />
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-      <img className="hidden lg:block p-8" src=data.skills_img />
+      <img className="hidden lg:block" src=data.skills_img />
       <div
         className="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center lg:place-items-start">
         <div className="grid grid-cols-1 w-3/5 lg:w-full">
