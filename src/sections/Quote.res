@@ -4,7 +4,7 @@ let make = (~data: Types.feeler) =>
     <div className="border border-solid border-secondary p-4 lg:p-8 w-full relative">
       {React.string(data.quote)}
       <p
-        className="absolute top-[-1.5rem] left-[-1rem] lg:left-3 text-6xl z-10 p-[0.025rem] bg-[#282C33] h-6">
+        className="absolute top-[-0.5rem] left-[-1rem] lg:left-3 text-6xl z-10 p-[0.025rem] bg-[#282C33] h-3">
         {React.string("\u201C")}
       </p>
       <p

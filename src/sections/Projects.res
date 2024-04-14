@@ -2,7 +2,9 @@
 let make = (~data: Types.projects) =>
   <div className="flex flex-col gap-8 lg:gap-12" id="works">
     <SectionHeader
-      title="projects" lineWidth="32rem" expandPath=Some(External.getPageLink("projects"))
+      title="projects"
+      lineWidthClass="w-[6rem] lg:w-[32rem]"
+      expandPath=Some(External.getPageLink("projects"))
     />
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
       {data.major

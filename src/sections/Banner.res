@@ -19,7 +19,7 @@ let make = (~data: Types.bannerData) =>
       </p>
       <p className="text-base leading-5 text-secondary"> {React.string(data.banner_text)} </p>
       <Link
-        to="#contacts"
+        to="/#contacts"
         className="border border-solid border-primary font-medium text-base leading-5 px-4 py-2 w-40 hover:border-[#af5ec6] text-center">
         {React.string("Contact me !!")}
       </Link>

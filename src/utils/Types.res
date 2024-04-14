@@ -50,6 +50,7 @@ type skills = {
   tools: string,
   frameworks: string,
   others: string,
+  cp_dsa: array<string>,
   skills_img: string,
 }
 

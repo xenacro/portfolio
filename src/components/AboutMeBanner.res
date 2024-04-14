@@ -11,5 +11,5 @@ let make = (~completeLink=None, ~intro, ~aboutImg) =>
         </Link>
       )}
     </div>
-    <img className="hidden lg:block" src=aboutImg />
+    <img className="hidden lg:block transform -scale-x-100" src=aboutImg />
   </div>

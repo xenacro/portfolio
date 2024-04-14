@@ -172,16 +172,30 @@ let getFrameworks = () => getOptionalStringFromOptionalDict(getSkillsData(), "fr
 
 let getOthers = () => getOptionalStringFromOptionalDict(getSkillsData(), "others")
 
+let getCpDsa = () =>
+  getOptionalArrayFromOptionalDict(getSkillsData(), "cp_dsa")->Belt.Option.flatMap(
+    parseJsonArrayToStringArray,
+  )
+
 let getSkillsImg = () => getOptionalStringFromOptionalDict(getSkillsData(), "skills_img")
 
 let getSkills = (): option<Types.skills> =>
-  switch (getLanguage(), getDatabases(), getTools(), getFrameworks(), getOthers(), getSkillsImg()) {
+  switch (
+    getLanguage(),
+    getDatabases(),
+    getTools(),
+    getFrameworks(),
+    getOthers(),
+    getCpDsa(),
+    getSkillsImg(),
+  ) {
   | (
       Some(language),
       Some(databases),
       Some(tools),
       Some(frameworks),
       Some(others),
+      Some(cp_dsa),
       Some(skills_img),
     ) =>
     Some({
@@ -190,6 +204,7 @@ let getSkills = (): option<Types.skills> =>
       tools,
       frameworks,
       others,
+      cp_dsa,
       skills_img,
     })
   | _ => None

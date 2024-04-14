@@ -2,9 +2,9 @@
     "hero_img": "/portfolio/assets/icons/hero_img.svg",
     "resume": "https://drive.google.com/file/d/1CW1yLdnOvBXJNe41aLX3IEixYjFunYLS/view?usp=sharing",
     "banner": {
-        "banner_img": "/portfolio/assets/icons/me-casual.jpg",
+        "banner_img": "/portfolio/assets/icons/me-casual.png",
         "banner_heading": "XeNaCrO is a #BOLD_START#Web Developer#BOLD_END# and #BOLD_START#System Architect#BOLD_END#",
-        "banner_text": "He crafts responsive websites where technologies meet creativity",
+        "banner_text": "Riding through the unsolved problems and stopping only to solve them.",
         "current_project": {
             "name": "Hypercheckout",
             "link": "https://juspay.in/hypercheckout"
@@ -18,7 +18,7 @@
         "major": [
             {
                 "thumbnail": "https://media.giphy.com/media/SuxqPnqYmViLDiX46n/giphy.gif",
-                "technologies": "React(Rescript) Haskell AWS(S3) Node.js(Express.js)",
+                "technologies": "React(Rescript) Haskell AWS Node(Express)",
                 "name": "Hyper Configurator (aka Studio)",
                 "description": "Configure your payment page with simple clicks and secure deployments.",
                 "app_link": "https://portal.juspay.in/studio"
@@ -32,7 +32,7 @@
             },
             {
                 "thumbnail": "/portfolio/assets/icons/seminare.png",
-                "technologies": "Node.js(Express.js) Mongodb(Mongoose Atlas) React SCSS",
+                "technologies": "Node(Express) Mongodb(Mongoose) React SCSS",
                 "name": "Seminare",
                 "description": "See and read all latest studies and conferences to stay updated with recent discoveries and researches",
                 "app_link": "https://seminare.in/"
@@ -41,7 +41,7 @@
                 "thumbnail": "/portfolio/assets/icons/settle-it-up.png",
                 "technologies": "React Node.js(Express.js) ReactNative(Expo CLI) MongoDB",
                 "name": "Settle It UP",
-                "description": "Find blue-collared service provider and make contract of getting it fulfilled in time."
+                "description": "Find a blue-collared service provider and make a contract to getting it fulfilled in time."
             },
             {
                 "thumbnail": "/portfolio/assets/icons/rupin.png",
@@ -53,7 +53,7 @@
                 "thumbnail": "/portfolio/assets/icons/rupin-assist.png",
                 "technologies": "Python(Django) ML(Rasa) Javascript",
                 "name": "Rupin Assist",
-                "description": "ML based, easy integratable chatbot with intent to action mapping for great end user experience"
+                "description": "ML based, easy integrable chatbot with intent to action mapping for great end user experience"
             },
             {
                 "thumbnail": "/portfolio/assets/icons/allpoker.png",
@@ -96,7 +96,7 @@
             {
                 "technologies": "React Axios RestAPI NodeJs(express.js) MongoDB Mongoose",
                 "name": "BankData",
-                "description": "Search about banks in cities and get insights for comparision",
+                "description": "Search about banks in cities and get insights for comparison",
                 "code_link": "https://github.com/xenacro/bank-data",
                 "app_link": "https://xenacro.github.io/bank-data/"
             },
@@ -132,23 +132,24 @@
         "tools": "VSCode Linux Jira Postman",
         "frameworks": "Node.js/Express.js React Django/Flask CSS(SCSS Tailwind Bootstrap) MaterialUI ReactNative(react-native CLI Expo CLI) Flutter",
         "others": "AWS(EC2 S3) VCS(Git GitHub BitBucket & Others) Jenkins MQTT",
-        "skills_img": "/portfolio/assets/icons/me-bike.jpg"
+        "cp_dsa": ["Leetcode: 3⭐, max rating - 1524, 300+ problems", "Codeforces: max rating - 1368, pupil", "Miscellaneous: 600+ problems"],
+        "skills_img": "/assets/icons/skills.gif"
     },
     "about_me": {
         "intro": [
             "Hello, I'm Xenacro!",
-            "I'm a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.",
-            "Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks."
+            "I'm a self-taught full-stack developer (with almost 2-3 years of experience) based in Bihar, India. I'm well versed in Javascript based technologies, and have worked with other languages as well in different areas (i.e., frontend, backend, dev-ops etc.)",
+            "Solving problems and riding bikes are kind of my thin-g, it is very exciting to me when I come across a new challenge and the more difficult or unsolvable the problem seems, the more interested I get in solving it. With this perspective I have been taking on different kind of tasks, delivering output and gaining experience."
         ],
-        "about_img": "/portfolio/assets/icons/me-formal.jpg",
+        "about_img": "/portfolio/assets/icons/meteor-350.png",
         "fun_facts": [
             "I like winter more than summer",
-            "I often bike with my friends",
+            "I often do road trips on bike.",
+            "I have explored 900+ cities in India",
+            "I'm working on myself to be more athletic",
             "I like pizza and pasta",
-            "I was in Egypt, Poland and Turkey",
-            "My favorite movie is The Green Mile",
-            "I am still in school",
-            "I like winter more than summer"
+            "The character I like the most would be \"Itachi Uchiha\"",
+            "My favorite song is \"Tera Hone Laga Hu\" - by Atif Aslam"
         ]
     },
     "contact_me": {
@@ -183,6 +184,16 @@
                 "icon": "/portfolio/assets/icons/reddit.svg",
                 "text": "@xenacro",
                 "link": "https://www.reddit.com/u/xenacro/s/k6NvOq3vZs"
+            },
+            {
+                "icon": "/portfolio/assets/icons/leetcode.svg",
+                "text": "@xenacro",
+                "link": "https://leetcode.com/xenacro/"
+            },
+            {
+                "icon": "/portfolio/assets/icons/codeforces.svg",
+                "text": "@xenacro",
+                "link": "https://codeforces.com/profile/xenacro"
             }
         ],
         "fund_raisers": []

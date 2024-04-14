@@ -3,7 +3,7 @@ let make = (~data: Types.contactMe) =>
   <div className="flex flex-col gap-8 lg:gap-12 animate-show-up">
     <ScreenHeader title="contacts" subTitle="Where am I?" />
     <ContactMeBanner data />
-    <SectionHeader title="all-media" lineWidth="0" />
+    <SectionHeader title="all-media" lineWidthClass="w-0" />
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-between">
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 items-start">
         {data.contacts
