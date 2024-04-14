@@ -1,6 +1,6 @@
 {
     "hero_img": "/portfolio/assets/icons/hero_img.svg",
-    "resume": "https://drive.google.com/file/d/1CW1yLdnOvBXJNe41aLX3IEixYjFunYLS/view?usp=sharing",
+    "resume": "https://drive.google.com/file/d/14TJT8Tgu3z6CP1Vs--g43-obIMg0n40d/view?usp=sharing",
     "banner": {
         "banner_img": "/portfolio/assets/icons/me-casual.png",
         "banner_heading": "XeNaCrO is a #BOLD_START#Web Developer#BOLD_END# and #BOLD_START#System Architect#BOLD_END#",
@@ -133,7 +133,7 @@
         "frameworks": "Node.js/Express.js React Django/Flask CSS(SCSS Tailwind Bootstrap) MaterialUI ReactNative(react-native CLI Expo CLI) Flutter",
         "others": "AWS(EC2 S3) VCS(Git GitHub BitBucket & Others) Jenkins MQTT",
         "cp_dsa": ["Leetcode: 3⭐, max rating - 1524, 300+ problems", "Codeforces: max rating - 1368, pupil", "Miscellaneous: 600+ problems"],
-        "skills_img": "/assets/icons/skills.gif"
+        "skills_img": "/portfolio/assets/icons/skills.gif"
     },
     "about_me": {
         "intro": [
