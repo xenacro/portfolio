@@ -54,6 +54,8 @@ let make = (~skills: option<Types.skills>, ~data: Types.aboutMe) =>
         )
         ->React.array}
       </div>
-      <img src="/assets/icons/about-doodle.png" className="w-0 lg:w-44 h-fit" />
+      <img
+        src={External.basepath ++ "assets/icons/about-doodle.png"} className="w-0 lg:w-44 h-fit"
+      />
     </div>
   </div>
